@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  background:black;
+}
+
+  .app {
+    @apply relative z-10 flex justify-center flex-col text-teal-500 font-poppins pt-20 pb-8 max-lg:pb-24;
+  }
+
+  .navigation-bar{
+    @apply w-full flex items-center gap-3 bg-slate-900 p-3 mb-10 text-teal-500 font-poppins
+  }
+
+  .dropDown{
+    @apply absolute mt-8 flex flex-col bg-slate-900 p-5 gap-3 rounded-lg
+  }
+
+  .dropDownLink{
+    @apply flex gap-2 items-center
+  }
+
+  .navButton{
+    @apply flex items-center gap-0.5
+  }
+
+  .search{
+    @apply bg-teal-500 pr-1 rounded-sm flex items-center gap-1
+  }
+
+  .searchBar{
+    @apply text-slate-900 p-1.5 outline-none rounded-sm
+  }
+  
+  .flex-center {
+    @apply flex items-center;
+  }
+
+  .pageButton{
+    @apply px-3 py-2 bg-teal-500 text-slate-900 rounded-md disabled:bg-gray-400 disabled:cursor-not-allowed
+  }
+
+  .componentSpacing {
+    @apply px-12 mt-8 max-md:px-4
+  }
+
+  .bottomNavButton{
+    @apply inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800
+  }
+  
+
+  /* CYAN 100 for  #DAFFFB*/
