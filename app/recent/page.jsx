@@ -52,9 +52,11 @@ export default function recentPage() {
       </div>
 
       <div className='flex-center flex-wrap w-full gap-3 bg-slate-900 p-3 rounded-lg mt-4'>
-        <MdLanguage
-          size={30}
-          />
+        <div className=' max-sm:hidden'>
+          <MdLanguage
+            size={30}
+            />
+        </div>
         <button 
           className='bg-teal-500 text-slate-900 rounded-lg p-1 disabled:bg-gray-400 disabled:cursor-not-allowed'
           onClick={handleSubPage}
