@@ -51,8 +51,8 @@ export default function recentPage() {
         </div>
       </div>
 
-      <div className='flex-center flex-wrap w-full gap-3 bg-slate-900 p-3 rounded-lg mt-4'>
-        <div className=' max-sm:hidden'>
+      <div className='flex-center flex-wrap w-full gap-3 bg-slate-900 p-3 rounded-lg mt-4 max-sm:grid max-sm:grid-cols-2'>
+        <div className='max-sm:hidden'>
           <MdLanguage
             size={30}
             />
@@ -81,7 +81,7 @@ export default function recentPage() {
           Chinese 
         </button>
 
-        <div className="flex-center ml-auto">
+        <div className="flex-center flex-wrap ml-auto max-sm:justify-center">
           <button
             className="pageButton"
             disabled={currentPage === 1}

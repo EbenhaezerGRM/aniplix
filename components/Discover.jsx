@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import getDiscover from '@app/libs/getDiscover'
+import { getDiscover } from '@app/libs/getDiscover'
 import { RiCompassDiscoverLine } from 'react-icons/ri'
 import { BsArrowRight } from 'react-icons/bs'
 
