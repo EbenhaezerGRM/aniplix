@@ -3,7 +3,7 @@ export const getRecent = async (page = 1, type = 1) => {
     {cache: 'no-cache'})
     
     if(!response.ok){
-        throw new Error('failed to fetch data')
+        throw new Error('failed to fetch recent anime')
     }
 
     return await response.json()

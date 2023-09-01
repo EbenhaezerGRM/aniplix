@@ -3,7 +3,7 @@ export const getPopular = async (page = 1) => {
     {cache: 'no-cache'})
   
     if (!response.ok) {
-      throw new Error('Failed to fetch data')
+      throw new Error('Failed to fetch popular anime')
     }
   
     return await response.json()

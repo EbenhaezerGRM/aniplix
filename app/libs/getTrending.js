@@ -3,7 +3,7 @@ export const getTrending = async (page = 1) => {
     {cache: 'no-cache'})
   
     if (!response.ok) {
-      throw new Error('Failed to fetch data')
+      throw new Error('Failed to fetch trending anime')
     }
   
     return await response.json()
